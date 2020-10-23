@@ -1,0 +1,6 @@
+header{display: flex;justify-content: space-between;}
+header .nav{display: flex;justify-content: space-around;}
+
+
+.container{padding: 30px;}
+.box{background: #fff;border:10px solid rgba(211, 211, 150,0.4);border-radius: 10px;box-shadow: 10px 10px 30px #ccc;}

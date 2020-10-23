@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 14px;
+    color:#846239;
+}
+
+*:focus, a:focus,a:hover,a { outline: none;text-decoration: none;color: #BE946D; }
+img { max-width: 100%; }
+ul, li { list-style: none; }
+
+.fr { float: right; }
+.fl { float: left; }
+.clearfix{ clear: both; }
+.dn { display: none; }
+.dk{ display: inline-block; }
+.prela { position: relative; }
+a:hover,a:focus,a:active { color: #007ab6; }
+
+
+.m-n{margin: 0;}
+.m-t-lg{margin-top: 30px;}
+.p-l-n{padding-left: 0;}
+.p-b-md{padding-bottom: 15px;}
+
+
+.row1{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.row2{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.row3{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+
+
+@font-face {
+    font-family: iconfont;
+    src: url(../Fonts/MyriadVariableConcept-Roman.otf);
+}
+
+.iconfont{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
