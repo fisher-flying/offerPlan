@@ -1,11 +1,15 @@
 *{margin: 0;padding: 0;}
+html{height: 100%;}
 body {
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-family: Microsoft YaHei,'YouYuan',sans-serif;
     font-size: 14px;
     color:#846239;
+    height: 100%;
 }
 
-*:focus, a:focus,a:hover,a { outline: none;text-decoration: none;color: #BE946D; }
+*:focus, a:focus,a:hover,a { outline: none;text-decoration: none;}
+a{color: #8e5b2d;}
+a:focus,a:hover{color: #BE946D;}
 img { max-width: 100%; }
 ul, li { list-style: none; }
 
@@ -15,7 +19,6 @@ ul, li { list-style: none; }
 .dn { display: none; }
 .dk{ display: inline-block; }
 .prela { position: relative; }
-a:hover,a:focus,a:active { color: #007ab6; }
 
 
 .m-n{margin: 0;}
@@ -28,6 +31,7 @@ a:hover,a:focus,a:active { color: #007ab6; }
 .row2{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
 .row3{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
 
+.t-center{text-align: center;}
 
 @font-face {
     font-family: iconfont;

@@ -1,6 +1,83 @@
-header{display: flex;justify-content: space-between;}
+header{display: flex;justify-content: space-between;padding: 30px 50px;}
+header .mid{display: flex;justify-content: center;}
+header .mid .phone{margin-right: 20px;}
+header .search{height: 42px;width: 420px;border: 1px solid #BE946D;white-space: nowrap;overflow: hidden;}
+header .search .text{height: 100%;width: calc(100% - 74px);border: none;vertical-align: top;padding-left: 10px;font-size: 15px;}
+header .search .btn{height: 100%;width: 60px;border: none;background: #e3d0bd url(../images/search.png) center center no-repeat;}
 header .nav{display: flex;justify-content: space-around;}
-
+header .nav li{padding: 0 15px;margin-left: 20px;font-size: 20px;line-height: 42px;}
+header .nav li:last-child{margin-left: 0;}
+header .nav li:hover,
+header .nav li.on{background:#e3d0bd;}
+header .nav li a:hover{color:#BE946D;}
 
 .container{padding: 30px;}
-.box{background: #fff;border:10px solid rgba(211, 211, 150,0.4);border-radius: 10px;box-shadow: 10px 10px 30px #ccc;}
+.bg{background-position:100%;background-repeat: no-repeat;background-size: cover;height: calc(100% - 105px);}
+.box{background: #fff;border:10px solid rgba(237, 224, 213,0.8);border-radius: 10px;box-shadow: 4px 2px 5px rgba(153,105,51,0.75);}
+.box-lg{background: #fff;border:25px solid rgba(237, 224, 213,0.8);border-radius: 20px;box-shadow: 6px 15px 20px rgba(153,105,51,0.75);}
+.btn-gold{background: url(../images/icon28.png) center no-repeat;background-size: cover;width: 276px;height: 46px;border-radius: 12px;line-height: 46px;color: #fff;box-shadow: 0px 5px 15px#deb06a;display: inline-block;}
+
+
+/* index */
+.index{background-image: url(../images/bg1.png);}
+.index .container{width: 36%;text-align: center;padding-left: 10%;}
+.index h1{font-size: 68px;font-weight: 300;text-align: right;letter-spacing: 8px;margin-bottom: 20px;}
+.index h1:first-child{margin-top: 24%;text-align: left;}
+.index p{font-size: 32px;margin-bottom: 80px;}
+.index .btn-gold{font-size: 30px;letter-spacing: 10px;height: 70px;width: 300px;line-height: 70px;font-weight: lighter;}
+
+
+
+
+
+
+
+
+/* notice */
+.notice{background-image: url(../images/bg4.png);}
+.notice .list{width: 50%;padding: 5% 0 0 37%;}
+.notice .list .box{margin-bottom: 50px;padding: 30px;font-size: 22px;}
+.notice .list span{font-size: 14px;color: #ababab;float: right;}
+
+.notice-detail{background-image: url(../images/bg3.png);}
+.notice-detail .container{padding: 3% 12%;}
+.notice-detail h1{font-size: 56px;color: #754C24;font-weight: lighter;text-align: center;letter-spacing: 0.4em;margin: 10px 0 40px;}
+.notice-detail .box-lg{padding: 20px 40px 40px;text-align: center;}
+.notice-detail .time{text-align: right;}
+.notice-detail h2{font-size: 32px;color: #603813;font-weight: normal;margin-bottom: 25px;}
+.notice-detail p{font-size: 18px;color: #846239;line-height: 40px;text-align: left;text-indent: 2em;letter-spacing: 4px;}
+.notice-detail .link{display: inline-block;background: #BE946D;color: #fff;padding: 10px 25px;font-size: 18px;border-radius: 10px;letter-spacing: 8px;margin-top: 20px;}
+
+/* contact us */
+.contact{background-image: url(../images/bg5.png);}
+.contact .container{display: flex;padding: 40px;align-items: center;}
+.contact .left{flex: 2;font-family: 'YouYuan';}
+.contact .left h3{font-size: 36px;padding-left: 20%;padding-bottom: 70px;font-weight: 400;letter-spacing: 0.25em;}
+.contact .left li{font-size: 20px;padding-bottom: 25px;padding-left: 20%;}
+.contact .left li > span{display: inline-block;width: 62px;vertical-align: middle;padding-right: 40px;}
+.contact .middle{flex: 2;margin-top: 150px;}
+.contact .right{flex: 1;text-align: center;}
+.contact .right .qcode{margin-top: 20px;padding-right: 120px;}
+.contact .right .qcode:first-child{margin-bottom: 130px;}
+.contact .right h5{font-size: 16px;margin: 30px 0 10px;}
+
+
+/* media query */
+@media only screen and (max-width:1399px) {
+    header .search{height: 42px;width: 320px;}
+    header .nav li{padding: 0 8px;margin: 0 5px;font-size: 18px;line-height: 42px;}
+
+
+    .index h1{font-size: 48px;letter-spacing: 4px;}
+    .index h1:first-child{margin-top: 14%;}
+    .index p{font-size: 24px;margin-bottom: 30px;}
+    .notice .list .box{margin-bottom: 20px;padding: 20px;font-size: 20px;}
+
+    .contact .container{padding: 30px;}
+    .contact .left h3{padding-left: 50px;padding-bottom: 50px;}
+    .contact .left li{padding-left: 50px;padding-bottom: 15px;font-size: 18px;}
+    .contact .middle{margin-top: 0;}
+    .contact .right .qcode{margin: 0;padding-right: 0px;}
+    .contact .right .qcode:first-child{margin-bottom: 30px;}
+    .contact .right .qcode img{width: 120px;}
+}
