@@ -108,21 +108,40 @@ header .nav li a:hover{color:#BE946D;}
 
 
 /* media query */
-@media only screen and (max-width:1399px) {
+@media only screen and (max-width:1599px) {
     header .search{height: 42px;width: 320px;}
     header .nav li{padding: 0 8px;margin: 0 5px;font-size: 18px;line-height: 42px;}
+
+    .box-lg h2{font-size: 42px;}
+    .box-lg .ctn{font-size: 18px;line-height: 42px;letter-spacing: 2px;}
 
 
     .index h1{font-size: 48px;letter-spacing: 4px;}
     .index h1:first-child{margin-top: 14%;}
     .index p{font-size: 24px;margin-bottom: 30px;}
+
     .notice .list .box{margin-bottom: 20px;padding: 20px;font-size: 20px;}
 
-    .contact .container{padding: 30px;}
-    .contact .left h3{padding-left: 50px;padding-bottom: 50px;}
+    .product .left .box-lg{    padding: 30px 30px;}
+    .product .left .box-lg h2{font-size: 40px;letter-spacing: 0.1em;}
+    .product .right .pic{padding-top: 0;}
+
+    .play-show .item .box-lg{padding: 25px 25px;}
+    .play-show .box-lg h2{margin-bottom: 10px;}
+    .play-show .box-lg .ctn{font-size: 16px;line-height: 32px;letter-spacing: 0;}
+    .play-show .item .slick-prev{bottom: -100px;}
+
+     .contact .container{padding: 30px;}
+     .contact .left h3{padding-left: 50px;padding-bottom: 50px;}
     .contact .left li{padding-left: 50px;padding-bottom: 15px;font-size: 18px;}
-    .contact .middle{margin-top: 0;}
+    .contact .middle{margin-top: 10px;}
     .contact .right .qcode{margin: 0;padding-right: 0px;}
-    .contact .right .qcode:first-child{margin-bottom: 30px;}
     .contact .right .qcode img{width: 120px;}
+
+}
+
+
+@media only screen and (max-width:1399px) {
+    .contact .middle{margin-top: 0;}
+    .contact .right .qcode:first-child{margin-bottom: 30px;}
 }
