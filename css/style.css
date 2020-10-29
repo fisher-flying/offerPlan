@@ -1,4 +1,4 @@
-header{display: flex;justify-content: space-between;padding: 30px 50px;}
+header{display: flex;justify-content: space-between;padding: 25px 50px;}
 header .mid{display: flex;justify-content: center;}
 header .mid .phone{margin-right: 20px;}
 header .search{height: 42px;width: 420px;border: 1px solid #BE946D;white-space: nowrap;overflow: hidden;}
@@ -10,13 +10,20 @@ header .nav li:last-child{margin-left: 0;}
 header .nav li:hover,
 header .nav li.on{background:#e3d0bd;}
 header .nav li a:hover{color:#BE946D;}
+.language{position: fixed;bottom: 30px;right: 30px;}
+
 
 .container{padding: 30px;}
-.bg{background-position:100%;background-repeat: no-repeat;background-size: cover;height: calc(100% - 105px);}
+.bg{background-position:100%;background-repeat: no-repeat;background-size: cover;height: calc(100% - 94px);}
 .box{background: #fff;border:10px solid rgba(237, 224, 213,0.8);border-radius: 10px;box-shadow: 4px 2px 5px rgba(153,105,51,0.75);}
-.box-lg{background: #fff;border:25px solid rgba(237, 224, 213,0.8);border-radius: 20px;box-shadow: 6px 15px 20px rgba(153,105,51,0.75);}
+.box-lg{background: #fff;border:25px solid rgba(237, 224, 213,0.8);border-radius: 50px;box-shadow: 6px 15px 20px rgba(153,105,51,0.75);}
+.box-lg h2{font-size: 46px;font-weight: lighter;letter-spacing: 10px;margin-bottom: 30px;font-family: '宋体';}
+.box-lg .ctn{font-size: 20px;line-height: 48px;letter-spacing: 5px;color: #ab9478;}
 .btn-gold{background: url(../images/icon28.png) center no-repeat;background-size: cover;width: 276px;height: 46px;border-radius: 12px;line-height: 46px;color: #fff;box-shadow: 0px 5px 15px#deb06a;display: inline-block;}
 
+.slick-arrow{font-size: 0;background-repeat: no-repeat;background-color: transparent;border: none;width: 113px;height: 113px;position: absolute;z-index: 2;}
+.slick-prev{background-image: url(../images/arrl.png);left: 0;}
+.slick-next{background-image: url(../images/arrr.png);right: 0px;}
 
 /* index */
 .index{background-image: url(../images/bg1.png);}
@@ -47,6 +54,44 @@ header .nav li a:hover{color:#BE946D;}
 .notice-detail h2{font-size: 32px;color: #603813;font-weight: normal;margin-bottom: 25px;}
 .notice-detail p{font-size: 18px;color: #846239;line-height: 40px;text-align: left;text-indent: 2em;letter-spacing: 4px;}
 .notice-detail .link{display: inline-block;background: #BE946D;color: #fff;padding: 10px 25px;font-size: 18px;border-radius: 10px;letter-spacing: 8px;margin-top: 20px;}
+
+
+/* product */
+.product{background-image: url(../images/bg9.png);}
+.product .left{display: inline-block;width: 54%;vertical-align: top;}
+.product .left .box-lg{margin: 8% 2% 0 8%;padding: 35px 40px;}
+.product .left .box-lg h2{letter-spacing: 0.25em;}
+.product .left .box-lg .ctn{text-indent: 2em;}
+.product .right{display: inline-block;width: 45%;overflow: hidden;}
+.product .right .slick{position: relative;margin: 25px;}
+.product .right .pic{display: inline-block;padding: 80px 0.7% 0;text-align: center;}
+.product .right .slick-prev{bottom: 70px;}
+.product .right .slick-next{right: 30px;bottom: 80px;}
+
+/* play-show */
+.play-show{background-image: url(../images/bg6.png);}
+.play-show .container{padding: 50px 100px;}
+.play-show .item .df{justify-content: space-between;}
+.play-show .item .left{width: 43%;}
+.play-show .item .left > div{position: relative;padding-left: 11%;}
+.play-show .item .slick-list{overflow: hidden;}
+.play-show .item .slick-prev{bottom: -160px;left: 15px;}
+.play-show .item .slick-next{top: 100px;right: -30px;}
+.play-show .item .box-lg{width: 43%;padding: 35px 40px;}
+.play-show .tab-nav{display: flex;margin-left: 50%;font-size: 24px;align-items: center;letter-spacing: 0.35em;color: #8e6d4c;margin-top: 15px;}
+.play-show .tab-nav li{padding-right: 30px;}
+.play-show .tab-nav .on{font-size: 32px;}
+
+
+
+/* buy */
+.buy{background-image: url(../images/bg7.png);}
+.buy .left{display: inline-block;width: 35%;overflow: hidden;padding: 50px;}
+.buy .left .tit{ height: 140px;  
+    writing-mode: vertical-lr; writing-mode: tb-lr;}
+.buy .left .slick{padding: 150px;}
+
+
 
 /* contact us */
 .contact{background-image: url(../images/bg5.png);}

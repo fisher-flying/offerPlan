@@ -6,6 +6,8 @@
     <title>购买</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -28,8 +30,32 @@
             <li class="on"><a href="buy.html">购买</a></li>
         </ul>
     </header>
-    <div class="bg forum">
-        购买
+    <div class="bg buy">
+        <div class="container">
+            <div class="left">
+                <div class="tit">AVIC&nbsp;&nbsp;UNIVERSAL</div>
+                <div class="slick">
+                    <img src="../images/img6.png" alt="">
+                    <img src="../images/img7.png" alt="">
+                    <img src="../images/img8.png" alt="">
+                </div>
+                <div class="tit tit2">AVIC&nbsp;&nbsp;UNIVERSAL</div>
+            </div>
+            <div class="right"></div>
+        </div>
     </div>
+    <ul class="language">
+        <li class="cn"><img src="../images/icon8.png" alt=""></li>
+        <li class="en"><img src="../images/icon9.png" alt=""></li>
+    </ul>
+
+    <script type="text/javascript">
+        $(function(){
+            $('.slick').slick({
+                vertical: true,
+                verticalSwiping: true
+            });
+        });
+    </script>
 </body>
 </html>

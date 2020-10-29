@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;}
 html{height: 100%;}
 body {
-    font-family: Microsoft YaHei,'YouYuan',sans-serif;
+    font-family: 'Microsoft YaHei','宋体','YouYuan',sans-serif;
     font-size: 14px;
     color:#846239;
     height: 100%;
@@ -16,6 +16,7 @@ ul, li { list-style: none; }
 .fr { float: right; }
 .fl { float: left; }
 .clearfix{ clear: both; }
+.df{ display: flex; }
 .dn { display: none; }
 .dk{ display: inline-block; }
 .prela { position: relative; }
