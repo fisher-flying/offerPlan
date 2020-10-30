@@ -35,13 +35,56 @@
             <div class="left">
                 <div class="tit">AVIC&nbsp;&nbsp;UNIVERSAL</div>
                 <div class="slick">
-                    <img src="../images/img6.png" alt="">
                     <img src="../images/img7.png" alt="">
                     <img src="../images/img8.png" alt="">
+                    <img src="../images/img6.png" alt="">
                 </div>
                 <div class="tit tit2">AVIC&nbsp;&nbsp;UNIVERSAL</div>
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <h2>天行计划•OFFER</h2>
+                <h2>航空工业首款剧情解谜书</h2>
+                <p class="sub-tit">Aviation industry's first plot puzzle book</p>
+                <div class="price">价格：¥ <font>398-996</font></div>
+                <div class="book">
+                    <ul class="tab-nav">
+                        <li class="on">双册板</li>
+                        <li>典藏版</li>
+                        <li>经典版</li>
+                    </ul>
+                    <div class="tab-item">
+                        <div class="item">
+                            <img src="../images/img7.png" alt="">
+                            <img src="../images/img7.png" alt="">
+                            <img src="../images/img7.png" alt="">
+                        </div>
+                        <div class="item dn">
+                            <img src="../images/img7.png" alt="">
+                            <img src="../images/img7.png" alt="">
+                            <img src="../images/img6.png" alt="">
+                        </div>
+                        <div class="item dn">
+                            <img src="../images/img8.png" alt="">
+                            <img src="../images/img7.png" alt="">
+                            <img src="../images/img7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="num">
+                    数 量
+                    <input type="text" value="2" />
+                    <span class="iconfont">&#x2227;</span>
+                    <span class="iconfont">&#x2228;</span>
+                    &nbsp;&nbsp;件
+                </div>
+                <br/>
+                <a class="go-buy" href="#;">
+                    <span class="btn-gold">
+                        <img src="../images/icon10.png" alt="">
+                        立即购买
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
     <ul class="language">
@@ -51,6 +94,15 @@
 
     <script type="text/javascript">
         $(function(){
+            $(".tab-nav li").click(function(){
+                let tab = $(this).parent();
+                let ind = tab.find("li").index(this);
+                $(this).addClass('on').siblings().removeClass('on');
+
+                let item =  tab.siblings().find('.item').eq(ind);
+                item.show().siblings().hide();
+            });
+
             $('.slick').slick({
                 vertical: true,
                 verticalSwiping: true
