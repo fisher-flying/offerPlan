@@ -124,7 +124,7 @@
             let ind = tab.find("li").index(this);
             $(this).addClass('on').siblings().removeClass('on');
 
-            let item =  tab.siblings().find('.item').eq(ind);
+            let item = tab.siblings().find('.item').eq(ind);
             item.show().siblings().hide();
             if(ind == 1 && slickLock[0]){
                 $('.slick2').slick()
