@@ -70,16 +70,76 @@
                         <font>5</font>
                     </li>
                 </ul>
-                <div class="gold-btn"><img src="../images/icon15.png" alt="">发表言论</div>
+                <div class="btn-gold"><img src="../images/icon15.png" alt="">发表言论</div>
             </div>
         </div>
         <div class="dk right">
             <div class="folder">
                 <img src="../images/arr1.png" alt="">
             </div>
-            <div class="box-lg">
-                <div class="ctn">阿甘回家购房贷款结核杆菌咖啡馆法华经嘎哈阿十几个卡阿就看过哈更好阿个很骄傲去放韩剧 u抚养费v我活该被法院法庭不辜负98v发图服务iu分个。</div>
+            <div class="top">
+                <a href="#;"><img src="../images/icon17.png" /></a>
+                <ul class="tab-nav">
+                    <li class="on">最新</li>
+                    <li>热门</li>
+                    <li>精选</li>
+                </ul>
             </div>
+            <div class="tab-item">
+                <div class="item">
+                    <div class="box-lg">
+                        <div class="uer-pic"><img src="../images/icon18.png"></div>
+                        <div class="uer-info">
+                            <div class="name">
+                                <h3>将卡夫卡<img src="../images/icon14.png" alt=""></h3>
+                                <div class="time">今天 9:00</div>
+                            </div>
+                            <div class="ctn">阿甘回家购房贷款结核杆菌咖啡馆法华经嘎哈阿十几个卡阿就看过哈更好阿个很骄傲去放韩剧 u抚养费v我活该被法院法庭不辜负98v发图服务iu分个。</div>
+                            <div class="pic-list">
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                            </div>
+                            <ul class="options">
+                                <li><img src="../images/icon20.png">收藏<font>50</font></li>
+                                <li><img src="../images/icon21.png">评论<font>500</font></li>
+                                <li><img src="../images/icon22.png">点赞<font>333</font></li>
+                            </ul>
+                       </div>
+                    </div>
+                    <div class="box-lg">
+                        <div class="uer-pic"><img src="../images/icon18.png"></div>
+                        <div class="uer-info">
+                            <div class="name">
+                                <h3>将卡夫卡<img src="../images/icon14.png" alt=""></h3>
+                                <div class="time">今天 9:00</div>
+                            </div>
+                            <div class="ctn">阿甘回家购房贷款结核杆菌咖啡馆法华经嘎哈阿十几个卡阿就看过哈更好阿个很骄傲去放韩剧 u抚养费v我活该被法院法庭不辜负98v发图服务iu分个。</div>
+                            <div class="pic-list">
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                                <div class="img"></div>
+                            </div>
+                            <ul class="options">
+                                <li><img src="../images/icon20.png">收藏<font>50</font></li>
+                                <li><img src="../images/icon21.png">评论<font>500</font></li>
+                                <li><img src="../images/icon22.png">点赞<font>333</font></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+                <div class="item dn">
+                    12
+                </div>
+                <div class="item dn">
+                    123
+                </div>
+            </div>
+            
         </div>
     </div>
     <ul class="language">
@@ -91,6 +151,15 @@
         $(function(){
             $('.folder').click(function(){
                 $(".left,.right").toggleClass('open');
+            });
+
+            $(".tab-nav li").click(function(){
+                let tab = $(this).parent();
+                let ind = tab.find("li").index(this);
+                $(this).addClass('on').siblings().removeClass('on');
+
+                let item = tab.parent().siblings().find('.item').eq(ind);
+                item.show().siblings().hide();
             });
         });
     </script>
