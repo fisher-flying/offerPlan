@@ -29,7 +29,7 @@
             <li><a href="buy.html">购买</a></li>
         </ul>
     </header>
-    <div class="login">
+    <div class="login regist">
         <div class="container">
             <div class="left">
                 <img src="../images/img4.png" />
@@ -39,44 +39,43 @@
                     <div class="user-pic">
                         <img src="../images/icon19.png">
                     </div>
-                    <ul class="tab-nav df">
-                        <li class="on">手机号</li>
-                        <li>邮箱/用户名</li>
-                    </ul>
-                    <div class="tab-item">
-                        <div class="item">
-                            <div class="el-form">
-                                <span class="icon"><img src="../images/icon26.png"></span>
-                                <input type="text" name="手机号" placeholder="手机号">
-                            </div>
-                            <div class="el-form">
-                                <span class="icon"><img src="../images/icon27.png"></span>
-                                <input type="password" name="密码" placeholder="密码">
-                                <a href="passWord.html" class="link">忘记密码?</a>
-                            </div>
+                    <div class="tit">注册</div>
+                    <div class="form">
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon33.png"></span>
+                            <input type="text" name="手机号" placeholder="手机号">
                         </div>
-                        <div class="item dn">
-                            <div class="el-form">
-                                <span class="icon"><img src="../images/icon26.png"></span>
-                                <input type="text" name="邮箱/用户名" placeholder="邮箱/用户名">
-                            </div>
-                            <div class="el-form">
-                                <span class="icon"><img src="../images/icon27.png"></span>
-                                <input type="password" name="密码" placeholder="密码">
-                                <a href="passWord.html" class="link">忘记密码?</a>
-                            </div>
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon26.png"></span>
+                            <input type="text" name="昵称" placeholder="昵称">
                         </div>
-                       
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon27.png"></span>
+                            <input type="password" name="密码" placeholder="密码">
+                            <span class="el-right">
+                                <img src="../images/icon16.png" alt="">
+                            </span>
+                        </div>
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon35.png"></span>
+                            <input type="text" name="验证码" placeholder="验证码">
+                        </div>
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon36.png"></span>
+                            <input type="text" name="年龄" placeholder="年龄">
+                        </div>
+                        <div class="el-form">
+                            <span class="icon"><img src="../images/icon34.png"></span>
+                            <input type="text" name="性别" placeholder="性别">
+                            <span class="iconfont btn-sex">&#x2228;</span>
+                            <ul class="sex">
+                                <li>男</li>
+                                <li>女</li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <a class="go-login" href="#;"><span class="btn-gold">注册</span></a>
                     <div class="tips m-b">登录即代表同意<a href="#;">服务协议</a>和<a href="#;">隐私政策</a></div>
-                    <div class="tips">还没有账户？<a href="regist.html">注册</a></div>
-                    <ul class="login-way">
-                        <li><a href="#;"><img src="../images/icon29.png" />微信登陆</a></li>
-                        <li><a href="#;"><img src="../images/icon28.png" />QQ登陆</a></li>
-                        <li><a href="#;"><img src="../images/icon30.png" />微博登陆</a></li>
-                    </ul>
+                    <a class="go-login" href="#;"><span class="btn-gold">注册</span></a>
                 </div>
             </div>
         </div>
@@ -88,13 +87,8 @@
 
     <script type="text/javascript">
         $(function(){
-            $(".tab-nav li").click(function(){
-                let tab = $(this).parent();
-                let ind = tab.find("li").index(this);
-                $(this).addClass('on').siblings().removeClass('on');
-
-                let item =  tab.siblings().find('.item').eq(ind);
-                item.show().siblings().hide();
+            $(".btn-sex").click(function(){
+                $(this).siblings('.sex').slideToggle('fast');
             });
 
         });
