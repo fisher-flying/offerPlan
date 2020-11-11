@@ -73,9 +73,9 @@
                 <div class="num">
                     数 量
                     <input type="text" value="2" />
-                    <span class="iconfont">&#x2227;</span>
-                    <span class="iconfont">&#x2228;</span>
-                    &nbsp;&nbsp;件
+                    <span class="iconfont top">&#x2227;</span>
+                    <span class="iconfont bot">&#x2228;</span>
+                    <span class="unit">件</span>
                 </div>
                 <br/>
                 <a class="go-buy" href="#;">
@@ -106,6 +106,10 @@
             $('.slick').slick({
                 vertical: true,
                 verticalSwiping: true
+            });
+
+            $('.slick-prev').on('click', function(){
+                console.log(22)
             });
         });
     </script>
