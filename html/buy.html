@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>购买</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -107,9 +108,15 @@
                 vertical: true,
                 verticalSwiping: true
             });
-
-            $('.slick-prev').on('click', function(){
-                console.log(22)
+            // $('.slick-prev').on('click', function () {
+            //     console.log(22)
+            // })
+            $('.left')[0].addEventListener('mousewheel', function (e) {
+                if(e.wheelDelta>0) {
+                   $('.slick').slick('slickNext');
+                }else{
+                    $('.slick').slick('slickPrev');
+                }
             });
         });
     </script>
